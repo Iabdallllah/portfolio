@@ -24,9 +24,14 @@
             "icon": "https://img.icons8.com/color/48/000000/tensorflow.png"
         },
     {
-        "name": "MongoDB",
-        "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
+        "name": "SQL",
+        "icon": "https://img.icons8.com/color/48/000000/sql.png"
     },
+    {
+        "name": "matplotlib",
+        "icon": "https://img.icons8.com/color/48/000000/matplotlib.png"
+    },
+
     {
         "name": "MySQL",
         "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
