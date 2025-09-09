@@ -181,44 +181,91 @@
 
   <div class="box-container">
 
-    <div class="box tilt">
-  <img draggable="false" src="./assets/images/projects/netflix.png" alt="Netflix Dataset" />
-      <div class="content">
-        <div class="tag">
-        <h3>Netflix Dataset Analysis</h3>
+    <div class="row-projects">
+      <div class="box tilt">
+        <img draggable="false" src="./assets/images/projects/netflix.png" alt="Netflix Dataset" />
+        <div class="content">
+          <div class="tag">
+            <h3>Netflix Dataset Analysis</h3>
+          </div>
+          <div class="desc">
+            <p>Exploratory data analysis and visualization on Netflix movies and TV shows dataset.</p>
+            <div class="btns">
+              <a href="https://github.com/Iabdallllah/Netflix" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="desc">
-          <p>Exploratory data analysis and visualization on Netflix movies and TV shows dataset.</p>
-          <div class="btns">
-            <a href="https://github.com/Iabdallllah/Netflix" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+      </div>
+      <div class="box tilt">
+        <img draggable="false" src="./assets/images/projects/email.jpg" alt="Spam Email Detector" />
+        <div class="content">
+          <div class="tag">
+            <h3>Spam Email Detector</h3>
+          </div>
+          <div class="desc">
+            <p>Machine learning model to classify emails as spam or not spam using NLP techniques.</p>
+            <div class="btns">
+              <a href="https://github.com/Iabdallllah/Email-spam-Detector.git" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box tilt">
+        <img draggable="false" src="./assets/images/projects/movie.jpg" alt="Movie Recommendation System" />
+        <div class="content">
+          <div class="tag">
+            <h3>Movie Recommendation System</h3>
+          </div>
+          <div class="desc">
+            <p>Recommendation system to suggest movies to users based on their preferences and history.</p>
+            <div class="btns">
+              <a href="https://github.com/Iabdallllah/Movie-recommendation-system.git" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="box tilt">
-  <img draggable="false" src="./assets/images/projects/email.jpg" alt="Spam Email Detector" />
-      <div class="content">
-        <div class="tag">
-        <h3>Spam Email Detector</h3>
-        </div>
-        <div class="desc">
-          <p>Machine learning model to classify emails as spam or not spam using NLP techniques.</p>
-          <div class="btns">
-            <a href="https://github.com/Iabdallllah/Email-spam-Detector.git" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+
+    <div class="row-projects">
+      <div class="box tilt">
+        <img draggable="false" src="./assets/images/projects/diabetes.jpg" alt="Diabetes Prediction Model" />
+        <div class="content">
+          <div class="tag">
+            <h3>Diabetes Prediction Model</h3>
+          </div>
+          <div class="desc">
+            <p>Machine learning model to predict diabetes based on medical data and patient information.</p>
+            <div class="btns">
+              <a href="https://github.com/Iabdallllah/Diabetes-Prediction-Model" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="box tilt">
-  <img draggable="false" src="./assets/images/projects/movie.jpg" alt="Movie Recommendation System" />
-      <div class="content">
-        <div class="tag">
-        <h3>Movie Recommender</h3>
+      <div class="box tilt">
+        <img draggable="false" src="./assets/images/projects/house.jpg" alt="House Price Prediction" />
+        <div class="content">
+          <div class="tag">
+            <h3>House Price Prediction</h3>
+          </div>
+          <div class="desc">
+            <p>Regression model to estimate house prices using various features and datasets.</p>
+            <div class="btns">
+              <a href="https://github.com/Iabdallllah/House-Price-Prediction" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="desc">
-          <p>Recommendation system to suggest movies to users based on their preferences and history.</p>
-          <div class="btns">
-            <a href="https://github.com/Iabdallllah/Movie-recommendation-system.git" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+      </div>
+      <div class="box tilt">
+        <img draggable="false" src="./assets/images/projects/hotel.png" alt="Hotel Booking Analysis" />
+        <div class="content">
+          <div class="tag">
+            <h3>Hotel Booking Analysis</h3>
+          </div>
+          <div class="desc">
+            <p>Data analysis project to explore and visualize hotel booking trends and patterns.</p>
+            <div class="btns">
+              <a href="https://github.com/Iabdallllah/gtc-ml-project1-hotel-bookings" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -301,11 +348,11 @@
       
       <div class="form-group">
         <div class="field">
-          <input type="text" name="name" placeholder="Name" required>
+          <input type="text" name="from_name" placeholder="Name" required>
           <i class='fas fa-user'></i>
         </div>
         <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
+          <input type="email" name="from_email" placeholder="Email" required>
           <i class='fas fa-envelope'></i>
         </div>
         <div class="field">
@@ -313,7 +360,7 @@
           <i class='fas fa-phone-alt'></i>
         </div>
         <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
+  <textarea placeholder="Message" name="message" required></textarea>
         <i class="fas fa-comment-dots"></i>
         </div>
         </div>
@@ -326,6 +373,31 @@
   </div>
 </section>
 <!-- contact section ends -->
+<!-- EmailJS integration for contact form -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("eExSKrXusmCze3PcN"); // Your Public Key
+  })();
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    emailjs.sendForm('service_558148c', 'template_5a13s1d', this, 'eExSKrXusmCze3PcN')
+      .then(function(response) {
+        console.log('EmailJS SUCCESS', response);
+        alert('Message Sent Successfully!');
+        document.getElementById('contact-form').reset();
+      })
+      .catch(function(error) {
+        console.log('EmailJS ERROR', error);
+        let msg = 'Submission Failed!';
+        if (error && error.text) {
+          msg += '\n' + error.text;
+        }
+        alert(msg);
+        console.error('EmailJS error:', error);
+      });
+  });
+</script>
 
 
 <!-- footer section starts -->
