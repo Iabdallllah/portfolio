@@ -1,3 +1,7 @@
+/* Prevent capitalization in email input */
+input[type="email"] {
+  text-transform: none;
+}
 /* Ensure email input does not capitalize first letter */
 input[name="email"] {
   text-transform: none !important;
