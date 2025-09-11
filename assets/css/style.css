@@ -1,3 +1,14 @@
+@media (max-width: 600px) {
+  .work .row-projects .box {
+    height: auto;
+    min-height: 180px;
+  }
+  .work .row-projects .box img {
+    height: 140px;
+    max-height: 40vw;
+    object-fit: contain;
+  }
+}
 /* Show project images fully inside their boxes */
 .work .row-projects .box img {
   width: 100%;
