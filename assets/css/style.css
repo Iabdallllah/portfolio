@@ -1,3 +1,137 @@
+/* Proposals Section */
+.proposals {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 16px rgba(44, 62, 80, 0.08);
+  margin: 4rem 0 2rem 0;
+  padding: 3rem 2rem 2rem 2rem;
+}
+.proposals .heading {
+  margin-bottom: 1.2rem;
+}
+.proposal-desc {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #444;
+  margin-bottom: 2.5rem;
+}
+.proposal-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.proposal-tab {
+  background: #f3f6fa;
+  border: none;
+  outline: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2b3dda;
+  border-radius: 2rem 2rem 0 0;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+}
+.proposal-tab.active, .proposal-tab:hover {
+  background: #2b3dda;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.10);
+}
+.proposal-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.proposal-card {
+  display: none;
+  flex-direction: column;
+  background: #f8faff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.07);
+  padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+  min-width: 370px;
+  max-width: 520px;
+  width: 100%;
+  font-size: 1.8rem;
+  transition: box-shadow 0.3s, transform 0.3s;
+  margin-bottom: 1.5rem;
+}
+.proposal-card.show {
+  display: flex;
+  animation: fadeIn 0.5s;
+}
+.proposal-card h3 {
+  font-size: 2.7rem;
+  color: #2b3dda;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+.proposal-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+.proposal-card ul li {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+.proposal-card ul li:before {
+  content: '\2022';
+  color: #2b3dda;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.proposal-btn {
+  display: inline-block;
+  background: #2b3dda;
+  color: #fff;
+  padding: 0.9rem 2.2rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+  transition: background 0.3s, transform 0.3s;
+}
+.proposal-btn:hover {
+  background: #011aff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 18px rgba(44,62,80,0.13);
+}
+@media (max-width: 900px) {
+  .proposal-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .proposal-card {
+    max-width: 95vw;
+    min-width: 0;
+  }
+}
+@media (max-width: 600px) {
+  .proposals {
+    padding: 2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .proposal-card {
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+  .proposal-tabs {
+    gap: 0.5rem;
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
   @media (max-width: 600px) {
     .work .row-projects {
       display: grid;
@@ -848,8 +982,8 @@
   /* experience section starts */
   .experience .timeline {
     position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1400px;
+    margin: 0 auto 2rem auto;
   }
   .experience .timeline::after {
     content: "";
@@ -863,10 +997,11 @@
     z-index: -2;
   }
   .experience .container {
-    padding: 10px 40px;
+    padding: 18px 60px;
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 55%;
+    font-size: 1.7rem;
   }
   /*circles on timeline*/
   .experience .container::after {
@@ -888,6 +1023,8 @@
   }
   .experience .left {
     left: 0;
+    margin-right: 0;
+    margin-left: -5%;
   }
   .experience .right {
     left: 50%;
@@ -924,10 +1061,11 @@
   .experience .content {
     background-color: #f68c09;
     position: relative;
-    border-radius: 6px;
+    border-radius: 10px;
+    font-size: 1.7rem;
   }
   .experience .content .tag {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     padding-top: 1.5rem;
     padding-left: 1.5rem;
   }
@@ -936,11 +1074,11 @@
     padding-bottom: 1rem;
   }
   .experience .content .desc h3 {
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     font-weight: 600;
   }
   .experience .content .desc p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
   /* view all button */
   .morebtn {
