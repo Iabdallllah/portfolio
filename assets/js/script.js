@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+    // Proposals tab switching
+    $(document).on('click', '.proposal-tab', function () {
+        var tab = $(this).data('tab');
+        $('.proposal-tab').removeClass('active');
+        $(this).addClass('active');
+        $('.proposal-card').removeClass('show');
+        $('#' + tab).addClass('show');
+    });
+
     $('#menu').click(function () {
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
