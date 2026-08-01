@@ -80,7 +80,7 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Machine learning", "AI / automation", "Generative AI"],
+    strings: ["Generative AI", "Agentic AI", "Backend Development"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
@@ -119,7 +119,7 @@ function showProjects(projects) {
     projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
         projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+      <img draggable="false" src="/assets/images/projects/${project.image}" alt="${project.name}" onerror="this.onerror=null;this.src='./assets/images/cmsoon.png'" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
@@ -127,7 +127,6 @@ function showProjects(projects) {
         <div class="desc">
           <p>${project.desc}</p>
           <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
             <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
           </div>
         </div>
@@ -157,10 +156,6 @@ function showProjects(projects) {
 
 fetchData().then(data => {
     showSkills(data);
-});
-
-fetchData("projects").then(data => {
-    showProjects(data);
 });
 
 // <!-- tilt js effect starts -->
